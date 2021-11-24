@@ -1,5 +1,5 @@
 export type ContactType = {
-	email: string;
-	github: string;
-	linkedin: string;
+    email: string;
+    github: string;
+    linkedIn: string;
 };
