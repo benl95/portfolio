@@ -1,6 +1,6 @@
 import type { NextPage, GetStaticProps } from 'next';
 import { Navigation } from '../types/navigation';
-import { Content, Sections } from '../types/sections';
+import { Content, Sections } from '../types/content';
 import Nav from '../components/common/Nav';
 import Head from 'next/head';
 import React from 'react';
@@ -24,12 +24,14 @@ const Home: NextPage<Content> = ({ links, sections }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
     try {
-        const navigation = await fetch('http://localhost:3000//api/navigation');
-        const content = await fetch('http://localhost:3000//api/content');
-        const { links }: Navigation = await navigation.json();
-        const sections: Sections = await content.json();
+        const [navigation, content] = await Promise.all([
+            fetch('http://localhost:3000//api/navigation'),
+            fetch('http://localhost:3000//api/content'),
+        ]);
+        const [{ links }, sections]: [links: Navigation, sections: Sections] =
+            await Promise.all([navigation.json(), content.json()]);
 
-        if (!links) {
+        if (!links || !sections) {
             return {
                 notFound: true,
             };
