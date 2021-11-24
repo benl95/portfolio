@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { Sections } from '../../types/sections';
+import { Sections } from '../../types/content';
 import * as content from '../../content/content.json';
 
 export default function handler(
