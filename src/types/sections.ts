@@ -1,3 +1,5 @@
+import { LinkType } from './navigation';
+
 export type AboutMe = {
     name: string;
     occupation: string;
@@ -20,4 +22,9 @@ export interface Sections {
     aboutMe: AboutMe;
     projects: Project[];
     contact: Contact[];
+}
+
+export interface Content {
+    links: LinkType[];
+    sections: Sections;
 }
