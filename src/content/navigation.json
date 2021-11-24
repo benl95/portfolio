@@ -1,16 +1,20 @@
 {
-	"links": [
-		{
-			"url": "/home/#about-me",
-			"text": "About me"
-		},
-		{
-			"url": "/home/#projects",
-			"text": "Projects"
-		},
-		{
-			"url": "/home/#contact",
-			"text": "Contact"
-		}
-	]
+    "links": [
+        {
+            "url": "/home/#about-me",
+            "text": "About me"
+        },
+        {
+            "url": "/home/#projects",
+            "text": "Projects"
+        },
+        {
+            "url": "/home/#contact",
+            "text": "Contact"
+        },
+        {
+            "url": "/api/resume",
+            "text": "Resume"
+        }
+    ]
 }
