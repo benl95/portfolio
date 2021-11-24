@@ -1,5 +1,8 @@
-import { LinkType } from './link';
-
 export interface Navigation {
-	links: LinkType[];
+    links: LinkType[];
 }
+
+export type LinkType = {
+    url: string;
+    text: string;
+};
