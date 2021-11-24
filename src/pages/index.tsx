@@ -1,4 +1,4 @@
-import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
+import type { NextPage, GetStaticProps } from 'next';
 import { Navigation } from '../types/navigation';
 import Nav from '../components/common/Nav';
 import Head from 'next/head';
