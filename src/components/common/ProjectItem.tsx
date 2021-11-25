@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Project, ProjectDetails } from '@/types/content';
+import { ProjectDetails } from '@/types/content';
 import Image from 'next/image';
 
 function ProjectItem({ src, tools, description }: ProjectDetails) {

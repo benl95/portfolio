@@ -1,28 +1,28 @@
 import { LinkType } from '@/types/link';
 
-export type ProjectDetails = {
+export interface ProjectDetails {
     src: string;
     tools: string[];
     description: string;
-};
+}
 
-export type ContactDetails = {
+export interface ContactDetails {
     email: string;
     github: string;
     linkedIn: string;
-};
+}
 
-export type AboutMe = {
+export interface AboutMe {
     title: string;
     name: string;
     occupation: string;
     about: string;
-};
+}
 
-export type Contact = {
+export interface Contact {
     title: string;
     details: ContactDetails;
-};
+}
 
 export interface Project {
     title: string;
