@@ -6,12 +6,12 @@
     },
     "projects": [
         {
-            "image": "../../public/spotify-project.png",
+            "image": "/spotify.svg",
             "tools": ["React", "NodeJS", "Typescript"],
             "description": "Small Spotify playlist clone made using the Spotify API"
         },
         {
-            "image": "../../public/pocket-tour-guide.png",
+            "image": "/pocket-tour-guide.svg",
             "tools": ["Figma", "Figma Prototyping"],
             "description": "Pocket Tour Guide, a travel and planning app for sightseeing"
         }
