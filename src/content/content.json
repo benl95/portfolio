@@ -1,26 +1,31 @@
 {
     "aboutMe": {
+        "title": "Hi, my name is",
         "name": "Ben Langenberg",
         "occupation": "Front-end Developer",
         "about": "I'm a front-end developer specialized in designing and building accessible web applications. Currently I'm focused on my studies at the Hogeschool van Amsterdam majoring in Communication & Multimediadesign with a specialization in front-end development."
     },
-    "projects": [
-        {
-            "image": "/spotify.svg",
-            "tools": ["React", "NodeJS", "Typescript"],
-            "description": "Small Spotify playlist clone made using the Spotify API"
-        },
-        {
-            "image": "/pocket-tour-guide.svg",
-            "tools": ["Figma", "Figma Prototyping"],
-            "description": "Pocket Tour Guide, a travel and planning app for sightseeing"
-        }
-    ],
-    "contact": [
-        {
+    "projects": {
+        "title": "Projects",
+        "list": [
+            {
+                "src": "/spotify.svg",
+                "tools": ["React", "NodeJS", "Typescript"],
+                "description": "Small Spotify playlist clone made using the Spotify API"
+            },
+            {
+                "src": "/pocket-tour-guide.svg",
+                "tools": ["Figma", "Figma Prototyping"],
+                "description": "Pocket Tour Guide, a travel and planning app for sightseeing"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "details": {
             "email": "hello@benlangenberg.com",
             "github": "https://github.com/benl95",
             "linkedIn": "https://www.linkedin.com/in/ben-langenberg-9a6298114/"
         }
-    ]
+    }
 }
