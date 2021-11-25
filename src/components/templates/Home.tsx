@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Sections, ProjectDetails } from '@/types/content';
 import ProjectItem from '@/components/ProjectItem';
+import Link from '@/components/Link';
 
 const HomeContent = ({ aboutMe, projects, contact }: Sections) => {
     const projectsList = projects.list.map(
@@ -29,7 +30,10 @@ const HomeContent = ({ aboutMe, projects, contact }: Sections) => {
             </section>
             <section>
                 <h2>{contact.title}</h2>
-                <a>{contact.details.email}</a>
+                <Link
+                    url={`mailto:${contact.details.email}`}
+                    text={contact.details.email}
+                />
             </section>
         </main>
     );
