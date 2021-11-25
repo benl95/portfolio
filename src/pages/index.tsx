@@ -1,51 +1,26 @@
 import type { NextPage, GetStaticProps } from 'next';
-import { Navigation } from '../types/navigation';
-import { Content, Sections } from '../types/content';
-import Nav from '../components/common/Nav';
-import Head from 'next/head';
-import React from 'react';
+import { Sections, Content } from '@/types/content';
+import HomeContent from '../components/templates/Home';
 
-const Home: NextPage<Content> = ({ links, sections }) => {
-    console.log(links, sections);
-    return (
-        <div>
-            <Head>
-                <title>Ben Langenberg</title>
-                <meta
-                    name="description"
-                    content="Ben Langenberg is a developer who is specialized in designing and building accessible web applications."
-                />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Nav links={links} />
-        </div>
-    );
+const Home: NextPage<Content> = ({ sections }) => {
+    return <HomeContent {...sections} />;
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-    try {
-        const [navigation, content] = await Promise.all([
-            fetch('http://localhost:3000//api/navigation'),
-            fetch('http://localhost:3000//api/content'),
-        ]);
-        const [{ links }, sections]: [links: Navigation, sections: Sections] =
-            await Promise.all([navigation.json(), content.json()]);
+    const content = await fetch('http://localhost:3000//api/content');
+    const sections: Sections = await content.json();
 
-        if (!links || !sections) {
-            return {
-                notFound: true,
-            };
-        }
-
+    if (!sections) {
         return {
-            props: {
-                links,
-                sections,
-            },
+            notFound: true,
         };
-    } catch (err) {
-        throw err;
     }
+
+    return {
+        props: {
+            sections,
+        },
+    };
 };
 
 export default Home;
