@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { LinkType } from '../../types/navigation';
+import { LinkType } from '@/types/navigation';
 
-const NavLink = ({ url, text }: LinkType) => {
+const Link = ({ url, text }: LinkType) => {
     return <a href={url}>{text}</a>;
 };
 
-export default NavLink;
+export default Link;

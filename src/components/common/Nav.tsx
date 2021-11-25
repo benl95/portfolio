@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import NavLink from './Link';
-import { Navigation } from '../../types/navigation';
+import Link from '@/components/Link';
+import { Navigation } from '@/types/navigation';
 
 const Nav = ({ links }: Navigation) => {
     const navLinks = links.map(({ url, text }) => {
         return (
             <li key={text}>
-                <NavLink url={url} text={text} />
+                <Link url={url} text={text} />
             </li>
         );
     });

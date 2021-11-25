@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Project } from '../../types/content';
+import { Project, ProjectDetails } from '@/types/content';
 import Image from 'next/image';
 
-function ProjectItem({ image, tools, description }: Project) {
+function ProjectItem({ src, tools, description }: ProjectDetails) {
     const width: number = 300;
     const height: number = 300;
 
@@ -14,7 +14,7 @@ function ProjectItem({ image, tools, description }: Project) {
         <li>
             <Image
                 alt="Project image"
-                src={image}
+                src={src}
                 width={width}
                 height={height}
             />
