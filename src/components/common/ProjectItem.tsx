@@ -6,6 +6,10 @@ function ProjectItem({ image, tools, description }: Project) {
     const width: number = 300;
     const height: number = 300;
 
+    const toolsList = tools.map((tool, i) => {
+        return <li key={i}>{tool}</li>;
+    });
+
     return (
         <li>
             <Image
@@ -14,9 +18,7 @@ function ProjectItem({ image, tools, description }: Project) {
                 width={width}
                 height={height}
             />
-            <ul>
-                <li>{tools}</li>
-            </ul>
+            <ul>{toolsList}</ul>
             <p>{description}</p>
         </li>
     );
