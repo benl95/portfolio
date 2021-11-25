@@ -1,4 +1,4 @@
-import { LinkType } from './navigation';
+import { LinkType } from '@/types/link';
 
 export type ProjectDetails = {
     src: string;
