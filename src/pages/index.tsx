@@ -1,6 +1,6 @@
 import type { NextPage, GetStaticProps } from 'next';
 import { Sections, Content } from '@/types/content';
-import HomeContent from '../components/templates/Home';
+import HomeContent from '@/templates/Home';
 
 const Home: NextPage<Content> = ({ sections }) => {
     return <HomeContent {...sections} />;
