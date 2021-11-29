@@ -13,6 +13,7 @@ p {
 
 h2 {
     color: v.$high-contrast;
+    font-weight: v.$font-normal;
 }
 
 a {
@@ -41,8 +42,7 @@ footer {
 
 main {
     display: grid;
-    grid-gap: 10rem;
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
+    grid-gap: v.$grid-grap;
+    margin: v.$horizontal-margin-s;
     width: clamp(16rem, 90vw, 70rem);
 }
