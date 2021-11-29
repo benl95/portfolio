@@ -20,12 +20,12 @@ const HomeContent = ({ aboutMe, projects, contact }: Sections) => {
     return (
         <main>
             <section className={styles['introduction']}>
-                <h2 className={styles['low-contrast']}>{aboutMe.title}</h2>
+                <h2>{aboutMe.title}</h2>
                 <div>
-                    <p className={styles['high-contrast']}>{aboutMe.name}</p>
+                    <p>{aboutMe.name}</p>
                     <p>{aboutMe.occupation}</p>
                 </div>
-                <p className={styles['high-contrast']}>{aboutMe.about}</p>
+                <p>{aboutMe.about}</p>
             </section>
             <section>
                 <h2>{projects.title}</h2>
