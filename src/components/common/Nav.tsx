@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from '@/components/Link';
 import { LinkType } from '@/types/link';
+import styles from '../../../styles/Nav.module.scss';
 
 const Nav = () => {
     const links = [
@@ -29,7 +30,7 @@ const Nav = () => {
         );
     });
     return (
-        <nav>
+        <nav className={styles['navigation']}>
             <ul>{navLinks}</ul>
         </nav>
     );

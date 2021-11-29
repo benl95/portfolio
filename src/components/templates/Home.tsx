@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Sections, ProjectDetails } from '@/types/content';
+import styles from '../../../styles/Home.module.scss';
 import ProjectItem from '@/components/ProjectItem';
 import Link from '@/components/Link';
 
@@ -18,11 +19,13 @@ const HomeContent = ({ aboutMe, projects, contact }: Sections) => {
     );
     return (
         <main>
-            <section>
-                <h2>{aboutMe.title}</h2>
-                <p>{aboutMe.name}</p>
-                <p>{aboutMe.occupation}</p>
-                <p>{aboutMe.about}</p>
+            <section className={styles['introduction']}>
+                <h2 className={styles['low-contrast']}>{aboutMe.title}</h2>
+                <div>
+                    <p className={styles['high-contrast']}>{aboutMe.name}</p>
+                    <p>{aboutMe.occupation}</p>
+                </div>
+                <p className={styles['high-contrast']}>{aboutMe.about}</p>
             </section>
             <section>
                 <h2>{projects.title}</h2>
