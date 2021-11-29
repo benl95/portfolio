@@ -1,0 +1,36 @@
+@use './variables.scss' as v;
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+
+    h2 {
+        font-size: v.$font-s;
+        font-weight: v.$font-normal;
+    }
+
+    div {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    div p {
+        font-size: v.$font-xl;
+        font-weight: v.$font-bold;
+    }
+
+    p:nth-child(3) {
+        font-size: v.$font-s;
+        font-weight: v.$font-normal;
+    }
+}
+
+.high-contrast {
+    color: v.$high-contrast;
+}
+
+.low-contrast {
+    color: v.$low-contrast;
+}

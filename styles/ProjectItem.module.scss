@@ -1,0 +1,5 @@
+@use './variables.scss' as v;
+
+.high-contrast {
+    color: v.$high-contrast;
+}
