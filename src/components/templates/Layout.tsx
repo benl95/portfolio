@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 import Head from 'next/head';
 
 interface LayoutProps {
@@ -18,6 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
             </Head>
             <Nav />
             {children}
+            <Footer />
         </>
     );
 };
