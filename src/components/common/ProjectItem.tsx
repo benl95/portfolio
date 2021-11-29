@@ -19,7 +19,7 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
                 width={width}
                 height={height}
             />
-            <ul>{toolsList}</ul>
+            <ul className={styles['tools']}>{toolsList}</ul>
             <p className={styles['high-contrast']}>{description}</p>
         </li>
     );
