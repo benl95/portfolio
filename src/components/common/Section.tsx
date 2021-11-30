@@ -1,16 +1,20 @@
 import React, { PureComponent } from 'react';
 import { Children } from '@/types/content';
+import Container from '@/components/Container';
+import { StyledSectionProps, StyledSection } from '../styles/Section.styles';
 
 interface SectionProps extends Children {
     title: string;
 }
 
-const Section = ({ title, children }: SectionProps) => {
+type Props = SectionProps & StyledSectionProps;
+
+const Section = ({ title, size, children }: Props) => {
     return (
-        <section>
+        <StyledSection size={size}>
             <h2>{title}</h2>
-            {children}
-        </section>
+            <Container>{children}</Container>
+        </StyledSection>
     );
 };
 
