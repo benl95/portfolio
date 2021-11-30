@@ -9,9 +9,9 @@ interface SectionProps extends Children {
 
 type Props = SectionProps & StyledSectionProps;
 
-const Section = ({ title, size, children }: Props) => {
+const Section = ({ title, size, contrast, children }: Props) => {
     return (
-        <StyledSection size={size}>
+        <StyledSection size={size} contrast={contrast}>
             <h2>{title}</h2>
             <Container>{children}</Container>
         </StyledSection>

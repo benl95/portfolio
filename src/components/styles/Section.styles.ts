@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export interface StyledSectionProps {
     size?: string;
+    contrast?: string;
 }
 
-export const StyledSection = styled('div')<StyledSectionProps>`
+export const StyledSection = styled('section')<StyledSectionProps>`
     h2 {
         font-size: ${({ size }) => (size === 'small' ? '1rem' : '1.5rem')};
-        color: rgba(white, 0.87);
+        color: #ffffff;
+        opacity: ${({ contrast }) => (contrast === 'high' ? 0.87 : 0.6)};
         font-weight: 300;
     }
 `;
