@@ -1,4 +1,9 @@
 import { LinkType } from '@/types/link';
+import React from 'react';
+
+export interface Children {
+    children: React.ReactNode;
+}
 
 export interface ProjectDetails {
     src: string;

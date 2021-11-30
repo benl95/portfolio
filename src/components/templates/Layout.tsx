@@ -3,12 +3,9 @@ import styles from '../../../styles/Layout.module.scss';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
+import { Children } from '@/types/content';
 
-interface LayoutProps {
-    children: React.ReactNode;
-}
-
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: Children) => {
     return (
         <div className={styles.container}>
             <Head>
