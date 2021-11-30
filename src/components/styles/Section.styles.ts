@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { TitleSizeMap, ContrastLevels } from '@/types/StyleMaps';
 export interface StyledSectionProps {
     size?: string;
     contrast?: string;
@@ -7,9 +7,11 @@ export interface StyledSectionProps {
 
 export const StyledSection = styled('section')<StyledSectionProps>`
     h2 {
-        font-size: ${({ size }) => (size === 'title-s' ? '1rem' : '1.5rem')};
+        font-size: ${({ size }) =>
+            size === 'title-s' ? TitleSizeMap.s : TitleSizeMap.m};
         color: #ffffff;
-        opacity: ${({ contrast }) => (contrast === 'high' ? 0.87 : 0.6)};
+        opacity: ${({ contrast }) =>
+            contrast === 'high' ? ContrastLevels.high : ContrastLevels.low};
         font-weight: 300;
     }
 `;

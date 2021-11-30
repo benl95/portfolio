@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { ParagraphSizeMap, ContrastLevels } from '@/types/StyleMaps';
 export interface StyledParagraphProps {
     contrast?: string;
     size?: string;
@@ -7,6 +7,8 @@ export interface StyledParagraphProps {
 
 export const StyledParagraph = styled('p')<StyledParagraphProps>`
     color: #ffffff;
-    font-size: ${({ size }) => (size === 'font-l' ? '1.875rem' : '1rem')};
-    opacity: ${({ contrast }) => (contrast === 'high' ? 0.87 : 0.6)};
+    font-size: ${({ size }) =>
+        size === 'font-l' ? ParagraphSizeMap.l : ParagraphSizeMap.m};
+    opacity: ${({ contrast }) =>
+        contrast === 'high' ? ContrastLevels.high : ContrastLevels.low};
 `;
