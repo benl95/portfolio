@@ -1,43 +1,15 @@
 import React, { Component } from 'react';
-import { Sections, ProjectDetails } from '@/types/content';
-import styles from '../../../styles/Home.module.scss';
-import ProjectItem from '@/components/ProjectItem';
-import Link from '@/components/Link';
+import { Sections } from '@/types/content';
+import Introduction from '@/sections/Introduction';
+import Projects from '@/sections/Projects';
+import Contact from '@/sections/Contact';
 
 const HomeContent = ({ aboutMe, projects, contact }: Sections) => {
-    const projectsList = projects.list.map(
-        ({ src, tools, description }: ProjectDetails, i: number | string) => {
-            return (
-                <ProjectItem
-                    key={i}
-                    src={src}
-                    tools={tools}
-                    description={description}
-                />
-            );
-        }
-    );
     return (
         <main>
-            <section className={styles['introduction']}>
-                <h2>{aboutMe.title}</h2>
-                <div>
-                    <p>{aboutMe.name}</p>
-                    <p>{aboutMe.occupation}</p>
-                </div>
-                <p>{aboutMe.about}</p>
-            </section>
-            <section>
-                <h2>{projects.title}</h2>
-                <ul>{projectsList}</ul>
-            </section>
-            <section>
-                <h2>{contact.title}</h2>
-                <Link
-                    url={`mailto:${contact.details.email}`}
-                    text={contact.details.email}
-                />
-            </section>
+            <Introduction {...aboutMe} />
+            <Projects {...projects} />
+            <Contact {...contact} />
         </main>
     );
 };
