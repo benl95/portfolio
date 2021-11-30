@@ -18,6 +18,7 @@
         "paths": {
             "@/components/*": ["components/common/*"],
             "@/templates/*": ["components/templates/*"],
+            "@/sections/*": ["components/sections/*"],
             "@/types/*": ["types/*"]
         }
     },
