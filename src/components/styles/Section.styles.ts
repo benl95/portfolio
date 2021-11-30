@@ -7,7 +7,7 @@ export interface StyledSectionProps {
 
 export const StyledSection = styled('section')<StyledSectionProps>`
     h2 {
-        font-size: ${({ size }) => (size === 'small' ? '1rem' : '1.5rem')};
+        font-size: ${({ size }) => (size === 'title-s' ? '1rem' : '1.5rem')};
         color: #ffffff;
         opacity: ${({ contrast }) => (contrast === 'high' ? 0.87 : 0.6)};
         font-weight: 300;
