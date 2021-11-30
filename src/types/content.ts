@@ -1,8 +1,10 @@
-import { LinkType } from '@/types/link';
-import React from 'react';
-
 export interface Children {
     children: React.ReactNode;
+}
+
+export interface LinkType {
+    url: string;
+    text: string;
 }
 
 export interface ProjectDetails {
@@ -33,6 +35,7 @@ export interface Project {
     title: string;
     list: ProjectDetails[];
 }
+
 export interface Sections {
     aboutMe: AboutMe;
     projects: Project;

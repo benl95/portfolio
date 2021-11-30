@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from '@/components/Link';
-import { LinkType } from '@/types/link';
+import { LinkType } from '@/types/content';
 import styles from '../../../styles/Nav.module.scss';
 
 const Nav = () => {
