@@ -5,11 +5,9 @@ import { AboutMe } from '@/types/content';
 
 const Introduction = ({ title, name, occupation, about }: AboutMe) => {
     return (
-        <Section title={title}>
-            <Container>
-                <p>{name}</p>
-                <p>{occupation}</p>
-            </Container>
+        <Section title={title} size="small">
+            <p>{name}</p>
+            <p>{occupation}</p>
             <p>{about}</p>
         </Section>
     );
