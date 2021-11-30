@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <title>Ben Langenberg</title>
                 <meta
                     name="description"
-                    content="Ben Langenberg is a developer who is specialized in designing and building accessible web applications."
+                    content="I'm a developer who is specialized in designing and building accessible web applications."
                 />
             </Head>
             <Nav />
