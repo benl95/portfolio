@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ProjectDetails } from '@/types/content';
 import Image from 'next/image';
-import styles from '../../../styles/ProjectItem.module.scss';
 
 function ProjectItem({ src, tools, description }: ProjectDetails) {
     const width: number = 300;
@@ -19,8 +18,8 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
                 width={width}
                 height={height}
             />
-            <ul className={styles['tools']}>{toolsList}</ul>
-            <p className={styles['high-contrast']}>{description}</p>
+            <ul>{toolsList}</ul>
+            <p>{description}</p>
         </li>
     );
 }

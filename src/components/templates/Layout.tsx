@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from '../../../styles/Layout.module.scss';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
@@ -7,7 +6,7 @@ import { Children } from '@/types/content';
 
 const Layout = ({ children }: Children) => {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Ben Langenberg</title>
                 <meta

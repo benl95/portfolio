@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Link from '@/components/Link';
 import { LinkType } from '@/types/content';
-import styles from '../../../styles/Nav.module.scss';
 
 const Nav = () => {
+    // TODO: load link props from json file
     const links = [
         {
             url: '/home/#about-me',
@@ -22,6 +22,8 @@ const Nav = () => {
             text: 'Resume',
         },
     ];
+    // TODO: create seperate variable for resume button, as it is a StyledLinkButton.
+    // Filter and concat array to navLinks
     const navLinks = links.map(({ url, text }: LinkType) => {
         return (
             <li key={text}>
@@ -30,7 +32,7 @@ const Nav = () => {
         );
     });
     return (
-        <nav className={styles['navigation']}>
+        <nav>
             <ul>{navLinks}</ul>
         </nav>
     );
