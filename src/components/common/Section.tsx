@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Children } from '@/types/content';
 import Container from '@/components/Container';
-import { StyledSection } from '../styles/Section.styles';
+import { StyledSection } from '@/styles/Section.styles';
 import { DimensionProps } from '@/types/theme';
 
 interface SectionProps extends Children {

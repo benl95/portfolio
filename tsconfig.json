@@ -19,6 +19,7 @@
             "@/components/*": ["components/common/*"],
             "@/templates/*": ["components/templates/*"],
             "@/sections/*": ["components/sections/*"],
+            "@/styles/*": ["components/styles/*"],
             "@/types/*": ["types/*"]
         }
     },

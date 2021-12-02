@@ -1,4 +1,4 @@
-import { colors } from 'components/styles/Theme.styles';
+import { colors } from '@/styles/Theme.styles';
 
 interface ThemeProps {
     fontSizes: string[];

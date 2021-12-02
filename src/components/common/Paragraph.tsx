@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyledParagraph } from '../styles/Paragraph.styles';
+import { StyledParagraph } from '@/styles/Paragraph.styles';
 import { DimensionProps } from '@/types/theme';
 
 interface ParagraphProps {
