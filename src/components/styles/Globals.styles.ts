@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
         background-color: ${({ theme }) => theme.colors.darkBlue};
     }
 
+    h2 {
+        color: ${({ theme }) => theme.colors.white};
+        font-weight: 300;
+    }
+
     p, 
     a {
         color: ${({ theme }) => theme.colors.white};
@@ -22,6 +27,10 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     
     ul {
         list-style-type: none;
+    }
+
+    li {
+        color: ${({ theme }) => theme.colors.white};
     }
 `;
 
