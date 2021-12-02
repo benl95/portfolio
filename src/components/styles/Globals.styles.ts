@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeProps } from 'components/styles/Theme.styles';
+import { ThemeProps } from '@/types/theme';
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     * {

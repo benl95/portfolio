@@ -1,3 +1,5 @@
+import { ThemeProps } from '@/types/theme';
+
 const fontSizes = ['1rem', '1.875rem', '1.5rem'];
 const contrastLevels = [0.6, 0.87];
 const fontWeights = [300, 500];
@@ -8,13 +10,6 @@ const colors = {
     red: '#ff0000',
 };
 
-interface ThemeProps {
-    fontSizes: string[];
-    contrastLevels: number[];
-    fontWeights: number[];
-    colors: { [key in keyof typeof colors]: string };
-}
-
 const theme: ThemeProps = {
     fontSizes,
     contrastLevels,
@@ -22,5 +17,4 @@ const theme: ThemeProps = {
     colors,
 };
 
-export { theme };
-export type { ThemeProps };
+export { theme, colors };
