@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     * {
     box-sizing: border-box; 
     border: 0;
+    margin: 0;
+    padding: 0;
     }
 
     body,
@@ -31,6 +33,16 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
 
     li {
         color: ${({ theme }) => theme.colors.white};
+    }
+
+    nav {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        padding: 36px 21px 36px 21px;
     }
 `;
 
