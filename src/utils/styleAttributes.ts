@@ -11,6 +11,10 @@ const handleFontSize = (
             return fontSizeMap.filter((x: string) => x === '1.5rem');
         case 'xl':
             return fontSizeMap.filter((x: string) => x === '1.875rem');
+        case 'xxl':
+            return fontSizeMap.filter((x: string) => x === '2.5rem');
+        case 'xxxl':
+            return fontSizeMap.filter((x: string) => x === '2.813rem');
         default:
             return fontSizeMap.filter((x: string) => x === '1rem');
     }
