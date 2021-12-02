@@ -6,9 +6,13 @@ import { Contact } from '@/types/content';
 
 const Contact = ({ title, details }: Contact) => {
     return (
-        <Section title={title}>
+        <Section title={title} contrast="high" size="l">
             <Container>
-                <Link url={`mailto:${details.email}`} text={details.email} />
+                <Link
+                    url={`mailto:${details.email}`}
+                    text={details.email}
+                    underline={true}
+                />
             </Container>
         </Section>
     );
