@@ -1,7 +1,0 @@
-@use './variables.scss' as v;
-
-.navigation {
-    ul li:nth-child(4) a {
-        color: v.$high-contrast;
-    }
-}
