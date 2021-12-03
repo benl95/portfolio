@@ -5,13 +5,14 @@ import { DimensionProps } from '@/types/theme';
 
 type Props = DimensionProps & LinkType;
 
-const Link = ({ url, text, size, contrast, underline }: Props) => {
+const Link = ({ url, text, size, contrast, underline, weight }: Props) => {
     return (
         <StyledLink
             size={size}
             contrast={contrast}
             underline={underline}
             href={url}
+            weight={weight}
         >
             {text}
         </StyledLink>

@@ -19,7 +19,8 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
 
     h2 {
         color: ${({ theme }) => theme.colors.white};
-        font-weight: 300;
+        font-weight: ${({ theme }) =>
+            theme.fontWeights.filter((x: number) => x === 300)};
     }
 
     p, 
@@ -36,7 +37,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     }
 
     nav {
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid ${({ theme }) => theme.colors.white};
     }
 
     main {

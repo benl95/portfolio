@@ -8,9 +8,9 @@ interface ParagraphProps {
 
 type Props = ParagraphProps & DimensionProps;
 
-const Paragraph = ({ text, contrast, size }: Props) => {
+const Paragraph = ({ text, contrast, size, weight }: Props) => {
     return (
-        <StyledParagraph size={size} contrast={contrast}>
+        <StyledParagraph size={size} contrast={contrast} weight={weight}>
             {text}
         </StyledParagraph>
     );

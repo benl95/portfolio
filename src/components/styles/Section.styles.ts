@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { DimensionProps } from '@/types/theme';
-import { handleFontSize, handleContrastLevel } from '@/utils/attributeHandlers';
+import {
+    handleFontSize,
+    handleContrastLevel,
+    handleFontWeight,
+} from '@/utils/attributeHandlers';
 
 export const StyledSection = styled('section')`
     display: grid;
@@ -11,7 +15,8 @@ export const StyledSection = styled('section')`
     padding: 18px 21px 3px 21px;
 
     h2 {
-        font-weight: 500;
+        font-weight: ${({ weight }: DimensionProps): number[] =>
+            handleFontWeight(weight)};
         font-size: ${({ size }: DimensionProps): string[] =>
             handleFontSize(size)};
         opacity: ${({ contrast }: DimensionProps): number[] =>
@@ -19,7 +24,6 @@ export const StyledSection = styled('section')`
     }
 
     p {
-        font-weight: 800;
         line-height: 68.3px;
     }
 
