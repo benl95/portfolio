@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import MobileNav from '@/components/MobileNav';
 import Head from 'next/head';
 import { Children } from '@/types/content';
 
@@ -14,7 +15,8 @@ const Layout = ({ children }: Children) => {
                     content="I'm a developer who is specialized in designing and building accessible web applications."
                 />
             </Head>
-            <Nav />
+            <MobileNav />
+            {/* <Nav /> */}
             {children}
             <Footer />
         </div>
