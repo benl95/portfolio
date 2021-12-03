@@ -7,9 +7,9 @@ import Image from 'next/image';
 
 const Introduction = ({ title, name, occupation }: AboutMe) => {
     return (
-        <Section title={title} contrast="low" size="xl">
-            <Paragraph text={name} size="xxl" contrast="high" />
-            <Paragraph text={occupation} size="xxl" />
+        <Section title={title} contrast="low" size="xl" weight="bold">
+            <Paragraph text={name} size="xxl" contrast="high" weight="black" />
+            <Paragraph text={occupation} size="xxl" weight="black" />
             {/* TODO: pass src, url and text as prop */}
             <ul>
                 <li>
