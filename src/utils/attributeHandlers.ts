@@ -1,5 +1,11 @@
 import { theme } from 'components/styles/Theme.styles';
 
+// TODO: future refactor:
+// Function that takes a attribute prop val as an argument
+// Determine which attribute type the given prop belongs to (font-size, font-weight, contrast level, text-decoration)
+// Filter in theme object which value belongs to passed attribute prop type
+// Return attribute value
+
 const handleFontSize = (
     size: string | undefined,
     fontSizeMap = theme.fontSizes
