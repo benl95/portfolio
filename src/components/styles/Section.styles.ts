@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const IntroSection = styled('section')`
     display: grid;
     grid-template-rows: repeat(auto-fill, 40px);
+    border-bottom: 1px solid ${({ theme }) => theme.colors.white};
 
     p {
         line-height: 4.269rem;
@@ -35,8 +36,10 @@ export const IntroSection = styled('section')`
 
 export const ProjectSection = styled('section')`
     max-width: 532px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.white};
 
     h2 {
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
 `;
@@ -47,4 +50,11 @@ export const StyledProjectsList = styled('ul')`
     align-items: center;
     gap: 2rem;
     margin-bottom: 0.7rem;
+`;
+
+export const ContactSection = styled('section')`
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 `;

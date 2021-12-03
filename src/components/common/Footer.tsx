@@ -6,7 +6,7 @@ const Footer = () => {
     const text = 'Designed & Built by Ben Langenberg';
     const url = 'https://github.com/benl95/portfolio';
     return (
-        <footer>
+        <footer style={{ textAlign: 'center' }}>
             <Link url={url} text={text} contrast="high" />
         </footer>
     );

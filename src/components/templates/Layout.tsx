@@ -18,7 +18,7 @@ const Layout = ({ children }: Children) => {
             <MobileNav />
             {/* <Nav /> */}
             {children}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };
