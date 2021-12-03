@@ -29,4 +29,8 @@ const handleContrastLevel = (
         : contrastLevelMap.filter((x: number) => x === 0.6);
 };
 
-export { handleFontSize, handleContrastLevel };
+const handleTextDecoration = (isTrue: boolean | undefined): string => {
+    return isTrue === true ? 'underline' : 'none';
+};
+
+export { handleFontSize, handleContrastLevel, handleTextDecoration };
