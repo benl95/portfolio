@@ -29,8 +29,29 @@ const handleContrastLevel = (
         : contrastLevelMap.filter((x: number) => x === 0.6);
 };
 
+const handleFontWeight = (
+    weight: string | undefined,
+    weightMap = theme.fontWeights
+) => {
+    switch (weight) {
+        case 'regular':
+            return weightMap.filter((x: number) => x === 300);
+        case 'bold':
+            return weightMap.filter((x: number) => x === 500);
+        case 'black':
+            return weightMap.filter((x: number) => x === 800);
+        default:
+            return weightMap.filter((x: number) => x === 300);
+    }
+};
+
 const handleTextDecoration = (isTrue: boolean | undefined): string => {
     return isTrue === true ? 'underline' : 'none';
 };
 
-export { handleFontSize, handleContrastLevel, handleTextDecoration };
+export {
+    handleFontSize,
+    handleContrastLevel,
+    handleTextDecoration,
+    handleFontWeight,
+};
