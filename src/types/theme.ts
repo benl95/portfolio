@@ -11,7 +11,7 @@ interface DimensionProps {
     size?: string;
     contrast?: string;
     underline?: boolean;
-    height?: string;
+    weight?: string;
 }
 
 export type { ThemeProps, DimensionProps };
