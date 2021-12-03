@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import { NavContainer } from 'components/styles/Container.styles';
-import Container from '@/components/Container';
+import React from 'react';
+import { NavContainer } from 'components/styles/Header.styles';
 import Link from '@/components/Link';
 import Image from 'next/image';
 
@@ -11,6 +10,7 @@ const MobileNav = () => {
     return (
         <nav>
             <NavContainer>
+                {/* TODO: pass src and text as props */}
                 <Link url={'http://localhost:3000'} text="Langenberg" />
                 <Image
                     src="/hamburger.svg"

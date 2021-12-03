@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { LinkType } from '@/types/content';
-import { StyledLink } from 'components/styles/Link.styles';
+import { StyledLink } from 'components/styles/Elements.styles';
 import { DimensionProps } from '@/types/theme';
 
 type Props = DimensionProps & LinkType;

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Link from '@/components/Link';
 import { LinkType } from '@/types/content';
 
 const Nav = () => {
-    // TODO: load link props from json file
+    // TODO: pass urls and text as props
     const links = [
         {
             url: '/home/#about-me',
@@ -22,8 +22,6 @@ const Nav = () => {
             text: 'Resume',
         },
     ];
-    // TODO: create seperate variable for resume button, as it is a StyledLinkButton.
-    // Filter and concat array to navLinks
     const navLinks = links.map(({ url, text }: LinkType) => {
         return (
             <li key={text}>
@@ -31,6 +29,7 @@ const Nav = () => {
             </li>
         );
     });
+
     return (
         <nav>
             <ul>{navLinks}</ul>

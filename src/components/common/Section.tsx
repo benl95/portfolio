@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Children } from '@/types/content';
 import { StyledSection } from 'components/styles/Section.styles';
 import { DimensionProps } from '@/types/theme';

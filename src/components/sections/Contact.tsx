@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 import Link from '@/components/Link';

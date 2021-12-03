@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { DimensionProps } from '@/types/theme';
-import { handleFontSize, handleContrastLevel } from '@/utils/styleAttributes';
+import { handleFontSize, handleContrastLevel } from '@/utils/attributeHandlers';
 
 export const StyledSection = styled('section')`
     display: grid;

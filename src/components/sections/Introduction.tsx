@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { AboutMe } from '@/types/content';
 import Section from '@/components/Section';
 import Link from '@/components/Link';
 import Paragraph from '@/components/Paragraph';
 import Image from 'next/image';
 
-const Introduction = ({ title, name, occupation, about }: AboutMe) => {
+const Introduction = ({ title, name, occupation }: AboutMe) => {
     return (
         <Section title={title} contrast="low" size="xl">
             <Paragraph text={name} size="xxl" contrast="high" />
             <Paragraph text={occupation} size="xxl" />
-
+            {/* TODO: pass src, url and text as prop */}
             <ul>
                 <li>
                     <Image
@@ -32,6 +32,7 @@ const Introduction = ({ title, name, occupation, about }: AboutMe) => {
                     <Link
                         url={'mailto:ben.langenberg987@gmail.com'}
                         text="hello@ben.com"
+                        underline={true}
                     />
                 </li>
             </ul>
