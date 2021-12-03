@@ -42,7 +42,8 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeProps }>`
     main {
         width: 100%;
         height: 100%;
-        padding: 36px 21px 36px 21px;
+        background: url('/blur.svg') no-repeat center;
+        background-size: 100% 100%;
     }
 `;
 
