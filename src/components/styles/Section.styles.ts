@@ -1,46 +1,25 @@
 import styled from 'styled-components';
-import { DimensionProps } from '@/types/theme';
-import {
-    handleFontSize,
-    handleContrastLevel,
-    handleFontWeight,
-} from '@/utils/attributeHandlers';
 
-export const StyledSection = styled('section')`
+export const IntroSection = styled('section')`
     display: grid;
-    grid-template-rows: repeat(auto-fill, 1fr);
-    height: 70vh;
-    width: 100%;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.white};
-    padding: 18px 21px 3px 21px;
-
-    h2 {
-        font-weight: ${({ weight }: DimensionProps): number[] =>
-            handleFontWeight(weight)};
-        font-size: ${({ size }: DimensionProps): string[] =>
-            handleFontSize(size)};
-        opacity: ${({ contrast }: DimensionProps): number[] =>
-            handleContrastLevel(contrast)};
-    }
+    grid-template-rows: repeat(auto-fill, 40px);
 
     p {
-        line-height: 68.3px;
+        line-height: 4.269rem;
     }
 
     h2 {
-        grid-row-start: 13;
+        margin-top: 6rem;
+        grid-row-start: 6;
     }
 
-    p:nth-child(2) {
-        grid-row-start: 14;
-    }
-
-    p:nth-child(3) {
-        grid-row-start: 15;
+    div {
+        margin-bottom: 7rem;
+        grid-row-start: 7;
     }
 
     ul {
-        grid-row-start: 31;
+        grid-row-start: 15;
         display: flex;
         gap: 10px;
     }
@@ -53,3 +32,5 @@ export const StyledSection = styled('section')`
         margin-top: 10px;
     }
 `;
+
+export const ProjectSection = styled('section')``;

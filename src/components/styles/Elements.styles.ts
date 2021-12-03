@@ -7,6 +7,14 @@ import {
     handleFontWeight,
 } from '@/utils/attributeHandlers';
 
+export const StyledTitle = styled('h2')<DimensionProps>`
+    font-weight: ${({ weight }: DimensionProps): number[] =>
+        handleFontWeight(weight)};
+    font-size: ${({ size }: DimensionProps): string[] => handleFontSize(size)};
+    opacity: ${({ contrast }: DimensionProps): number[] =>
+        handleContrastLevel(contrast)};
+`;
+
 export const StyledLink = styled('a')<DimensionProps>`
     font-size: ${({ size }: DimensionProps): string[] => handleFontSize(size)};
     opacity: ${({ contrast }: DimensionProps): number[] =>
