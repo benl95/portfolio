@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { LinkType } from '@/types/elements';
 import { StyledLink } from 'components/styles/Elements.styles';
 import { DimensionProps } from '@/types/theme';
