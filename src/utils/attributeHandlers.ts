@@ -46,7 +46,7 @@ const handleFontWeight = (
 };
 
 const handleTextDecoration = (isTrue: boolean | undefined): string => {
-    return isTrue === true ? 'underline' : 'none';
+    return isTrue ? 'underline' : 'none';
 };
 
 export {
