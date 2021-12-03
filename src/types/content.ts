@@ -4,7 +4,7 @@ export interface Children {
 
 export interface LinkType {
     url: string;
-    text: string;
+    text?: string;
 }
 
 export interface ProjectDetails {
