@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '@/components/Link';
-import { LinkType } from '@/types/content';
+import { LinkType } from '@/types/elements';
 
 const Nav = () => {
     // TODO: pass urls and text as props

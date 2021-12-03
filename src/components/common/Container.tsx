@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Children } from '@/types/content';
+import { Children } from '@/types/elements';
 
 interface className {
     className?: string;

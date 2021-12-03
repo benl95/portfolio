@@ -1,5 +1,5 @@
 import React from 'react';
-import { Children } from '@/types/content';
+import { Children } from '@/types/elements';
 import { StyledSection } from 'components/styles/Section.styles';
 import { DimensionProps } from '@/types/theme';
 

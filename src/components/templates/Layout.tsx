@@ -3,7 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import MobileNav from '@/components/MobileNav';
 import Head from 'next/head';
-import { Children } from '@/types/content';
+import { Children } from '@/types/elements';
 
 const Layout = ({ children }: Children) => {
     return (
@@ -18,7 +18,7 @@ const Layout = ({ children }: Children) => {
             <MobileNav />
             {/* <Nav /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
