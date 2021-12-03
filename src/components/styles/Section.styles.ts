@@ -9,12 +9,12 @@ export const IntroSection = styled('section')`
     }
 
     h2 {
-        margin-top: 6rem;
+        margin-top: 7rem;
         grid-row-start: 6;
     }
 
     div {
-        margin-bottom: 7rem;
+        margin-bottom: 8rem;
         grid-row-start: 7;
     }
 
@@ -33,4 +33,18 @@ export const IntroSection = styled('section')`
     }
 `;
 
-export const ProjectSection = styled('section')``;
+export const ProjectSection = styled('section')`
+    max-width: 532px;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+`;
+
+export const StyledProjectsList = styled('ul')`
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0.7rem;
+`;

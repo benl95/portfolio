@@ -7,6 +7,17 @@ import {
     handleFontWeight,
 } from '@/utils/attributeHandlers';
 
+export const StyledToolsList = styled('ul')`
+    display: flex;
+    gap: 10px;
+
+    li {
+        opacity: 0.6;
+    }
+
+    margin: 0.5rem 0 1rem 0;
+`;
+
 export const StyledTitle = styled('h2')<DimensionProps>`
     font-weight: ${({ weight }: DimensionProps): number[] =>
         handleFontWeight(weight)};

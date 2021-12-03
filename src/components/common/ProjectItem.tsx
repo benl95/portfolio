@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import { ProjectDetails } from '@/types/content';
+import React from 'react';
 import Image from 'next/image';
+import Paragraph from '@/components/Paragraph';
+import { ProjectDetails } from '@/types/content';
+import { StyledToolsList } from 'components/styles/Elements.styles';
 
 function ProjectItem({ src, tools, description }: ProjectDetails) {
-    const width: number = 300;
+    // TODO: pass width and height as props
+    const width: number = 383;
     const height: number = 300;
 
     const toolsList = tools.map((tool, i) => {
@@ -11,15 +14,16 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
     });
 
     return (
-        <li>
+        <li style={{ position: 'relative', width: '100%', height: '100%' }}>
             <Image
                 alt="Project image"
                 src={src}
                 width={width}
                 height={height}
+                objectFit="cover"
             />
-            <ul>{toolsList}</ul>
-            <p>{description}</p>
+            <StyledToolsList>{toolsList}</StyledToolsList>
+            <Paragraph text={description} contrast="high" weight="regular" />
         </li>
     );
 }

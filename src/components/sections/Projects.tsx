@@ -1,7 +1,11 @@
-import React, { Component } from 'react';
-import Section from '@/components/Section';
+import React from 'react';
 import ProjectItem from '@/components/ProjectItem';
+import Title from '@/components/Title';
 import { Project, ProjectDetails } from '@/types/content';
+import {
+    ProjectSection,
+    StyledProjectsList,
+} from 'components/styles/Section.styles';
 
 const Projects = ({ title, list }: Project) => {
     const projectsList = list.map(
@@ -18,9 +22,10 @@ const Projects = ({ title, list }: Project) => {
     );
 
     return (
-        <Section title={title}>
-            <ul>{projectsList}</ul>
-        </Section>
+        <ProjectSection>
+            <Title title={title} size="xl" weight="bold" contrast="high" />
+            <StyledProjectsList>{projectsList}</StyledProjectsList>
+        </ProjectSection>
     );
 };
 
