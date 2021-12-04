@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Link from '@/components/Link';
 
 const Footer = () => {
     // TODO: pass text and url as props
     const text = 'Designed & Built by Ben Langenberg';
     const url = 'https://github.com/benl95/portfolio';
     return (
-        <footer style={{ textAlign: 'center' }}>
-            <Link url={url} text={text} contrast="high" />
+        <footer>
+            <a href={url}>{text}</a>
         </footer>
     );
 };
