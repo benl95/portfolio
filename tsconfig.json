@@ -19,7 +19,6 @@
             "@/components/*": ["components/common/*"],
             "@/templates/*": ["components/templates/*"],
             "@/sections/*": ["components/sections/*"],
-            "@/utils/*": ["utils/*"],
             "@/types/*": ["types/*"]
         }
     },
