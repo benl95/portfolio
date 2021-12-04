@@ -6,11 +6,15 @@ import Contact from '@/sections/Contact';
 
 const HomeContent = ({ aboutMe, projects, contact }: Sections) => {
     return (
-        <main>
-            <Introduction {...aboutMe} />
-            <Projects {...projects} />
-            <Contact {...contact} />
-        </main>
+        <>
+            <header>
+                <Introduction {...aboutMe} />
+            </header>
+            <main>
+                <Projects {...projects} />
+                <Contact {...contact} />
+            </main>
+        </>
     );
 };
 
