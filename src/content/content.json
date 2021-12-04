@@ -15,7 +15,7 @@
             },
             {
                 "src": "/pocket-tour-guide.svg",
-                "tools": ["Figma", "Figma Prototyping"],
+                "tools": ["Figma", "Figma prototyping"],
                 "description": "Pocket Tour Guide, a travel and planning app for sightseeing"
             }
         ]
