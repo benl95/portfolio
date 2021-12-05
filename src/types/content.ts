@@ -1,3 +1,4 @@
+import { LinkType } from '@/types/elements';
 export interface ProjectDetails {
     src: string;
     tools: string[];
@@ -23,7 +24,7 @@ export interface Contact {
 }
 
 export interface Project {
-    title: string;
+    title?: string;
     list: ProjectDetails[];
 }
 
