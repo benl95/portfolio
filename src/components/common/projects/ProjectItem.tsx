@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './ProjectItem.module.css';
 import { ProjectDetails } from '@/types/content';
 
 function ProjectItem({ src, tools, description }: ProjectDetails) {
@@ -8,23 +9,28 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
     const height: number = 300;
 
     const toolsList = tools.map((tool, i) => {
-        return <li key={i}>{tool}</li>;
+        return (
+            <li className={styles.ToolsList} key={i}>
+                {tool}
+            </li>
+        );
     });
 
     return (
-        <>
-            <div>
+        <div>
+            <div className={styles.ImageContainer}>
                 <Image
                     alt="Project image"
                     src={src}
                     width={width}
                     height={height}
+                    layout="responsive"
                     objectFit="cover"
                 />
             </div>
             <ul>{toolsList}</ul>
-            <p>{description}</p>
-        </>
+            <p className={styles.HighContrast}>{description}</p>
+        </div>
     );
 }
 
