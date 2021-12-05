@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --background: #1f2933;
+    --white: #ffffff;
+    --low-contrast: 0.6;
+    --high-contrast: 0.87;
+    --font-m: 1rem;
+    --font-l: 1.5rem;
+    --fonts: 'Avenir Next', sans-serif;
+    --weight-black: 800;
+    --weight-bold: 500;
+    --weight-regular: 300;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+    font-family: var(--fonts);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+p {
+    color: var(--white);
+    opacity: var(--low-contrast);
+    font-size: var(--font-m);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: var(--white);
+    opacity: var(--high-contrast);
+    font-weight: var(--weight-bold);
+    font-size: var(--font-l);
+}
