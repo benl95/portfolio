@@ -1,0 +1,52 @@
+.Section {
+    border-bottom: 1px solid var(--white);
+    background: url('/blur.svg') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.HeaderContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: calc(80vh - 30px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 532px;
+    padding: 1.125rem 1.1313rem 1.125rem 1.313rem;
+}
+
+.LinksContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.IntroductionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.FlexGrow {
+    flex-grow: 1;
+}
+
+.MarginTop {
+    margin-top: 10px;
+}
+
+.Title {
+    font-size: var(--font-l);
+    font-weight: var(--weight-bold);
+    opacity: var(--low-contrast);
+}
+
+.Bold {
+    font-size: var(--font-xl);
+    font-weight: var(--weight-black);
+    opacity: var(--high-contrast);
+}
+
+.LowContrast {
+    opacity: var(--low-contrast);
+}
