@@ -14,7 +14,7 @@ const Layout = ({ children }: Children) => {
                     content="I'm a developer who is specialized in designing and building accessible web applications."
                 />
             </Head>
-            <MobileNav text="langenberg" />
+            <MobileNav text="Langenberg" />
             {children}
             <Footer />
         </div>
