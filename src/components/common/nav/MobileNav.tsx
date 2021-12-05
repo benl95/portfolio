@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './MobileNav.module.css';
 interface Props {
     text: string;
 }
@@ -10,8 +11,8 @@ const MobileNav = ({ text }: Props) => {
 
     return (
         <nav>
-            <div>
-                <ul>
+            <div className={styles.NavContainer}>
+                <ul className={styles.Nav}>
                     {/* TODO: pass src and text as props */}
                     <li>
                         <a href={'http://localhost:3000'}>{text}</a>
