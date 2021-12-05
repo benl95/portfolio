@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectList from '@/components/projects/ProjectList';
-import { Project, ProjectDetails } from '@/types/content';
+import { Project } from '@/types/content';
 
 const Projects = ({ title, list }: Project) => {
     return (
