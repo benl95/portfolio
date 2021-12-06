@@ -17,7 +17,7 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
     });
 
     return (
-        <div>
+        <div className={styles.Container}>
             <div className={styles.ImageContainer}>
                 <Image
                     alt="Project image"
@@ -28,7 +28,7 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
                     objectFit="cover"
                 />
             </div>
-            <ul>{toolsList}</ul>
+            <ul className={styles.Flex}>{toolsList}</ul>
             <p className={styles.HighContrast}>{description}</p>
         </div>
     );

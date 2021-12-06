@@ -12,3 +12,14 @@
     color: var(--white);
     opacity: var(--low-contrast);
 }
+
+.Flex {
+    display: flex;
+    gap: 20px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
+import styles from './ProjectList.module.css';
 import { Project, ProjectDetails } from '@/types/content';
 
 const ProjectList = ({ list }: Project) => {
@@ -17,7 +18,7 @@ const ProjectList = ({ list }: Project) => {
         }
     );
 
-    return <ul>{projectsList}</ul>;
+    return <ul className={styles.Container}>{projectsList}</ul>;
 };
 
 export default ProjectList;

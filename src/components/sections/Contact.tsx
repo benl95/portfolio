@@ -1,11 +1,16 @@
 import React from 'react';
+import styles from './Contact.module.css';
 import { Contact } from '@/types/content';
 
 const Contact = ({ title, details }: Contact) => {
     return (
         <section>
-            <h2>{title}</h2>
-            <a href={`mailto:${details.email}`}>{details.email}</a>
+            <div className={styles.Container}>
+                <h2 className={styles.Title}>{title}</h2>
+                <a className={styles.Link} href={`mailto:${details.email}`}>
+                    {details.email}
+                </a>
+            </div>
         </section>
     );
 };
