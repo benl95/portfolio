@@ -3,7 +3,9 @@
         "title": "Hi, my name is",
         "name": "Ben Langenberg",
         "occupation": "Web Developer",
-        "about": "I'm a front-end developer specialized in designing and building accessible web applications. Currently I'm focused on my studies at the Hogeschool van Amsterdam majoring in Communication & Multimediadesign with a specialization in front-end development."
+        "about": "I'm a front-end developer specialized in designing and building accessible web applications. Currently I'm focused on my studies at the Hogeschool van Amsterdam majoring in Communication & Multimediadesign with a specialization in front-end development.",
+        "github": "https://github.com/benl95",
+        "linkedIn": "https://www.linkedin.com/in/ben-langenberg-9a6298114/"
     },
     "projects": {
         "title": "Projects",
@@ -23,9 +25,7 @@
     "contact": {
         "title": "Contact",
         "details": {
-            "email": "hello@ben.com",
-            "github": "https://github.com/benl95",
-            "linkedIn": "https://www.linkedin.com/in/ben-langenberg-9a6298114/"
+            "email": "hello@ben.com"
         }
     }
 }

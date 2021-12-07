@@ -3,7 +3,13 @@ import Image from 'next/image';
 import styles from './Introduction.module.css';
 import { AboutMe } from '@/types/content';
 
-const Introduction = ({ title, name, occupation }: AboutMe) => {
+const Introduction = ({
+    title,
+    name,
+    occupation,
+    github,
+    linkedIn,
+}: AboutMe) => {
     return (
         <section className={styles.Section}>
             <div className={styles.HeaderContainer}>
@@ -19,7 +25,7 @@ const Introduction = ({ title, name, occupation }: AboutMe) => {
                 <div>
                     <ul className={styles.LinksContainer}>
                         <li>
-                            <a className={styles.HighContrast}>
+                            <a href={github} className={styles.HighContrast}>
                                 <Image
                                     src="/github-icon.svg"
                                     alt="Github icon"
@@ -29,7 +35,7 @@ const Introduction = ({ title, name, occupation }: AboutMe) => {
                             </a>
                         </li>
                         <li className={styles.FlexGrow}>
-                            <a className={styles.HighContrast}>
+                            <a href={linkedIn} className={styles.HighContrast}>
                                 <Image
                                     src={'/linkedin-icon.svg'}
                                     alt="LinkedIn icon"

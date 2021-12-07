@@ -16,6 +16,8 @@ export interface AboutMe {
     name: string;
     occupation: string;
     about: string;
+    github: string;
+    linkedIn: string;
 }
 
 export interface Contact {
