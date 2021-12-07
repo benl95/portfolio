@@ -5,3 +5,7 @@
 .Container {
     padding: 1.125rem 1.1313rem 1.125rem 1.313rem;
 }
+
+.Link:hover {
+    opacity: var(--high-contrast);
+}

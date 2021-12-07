@@ -8,10 +8,10 @@ const Introduction = ({ title, name, occupation }: AboutMe) => {
         <section className={styles.Section}>
             <div className={styles.HeaderContainer}>
                 <div className={styles.IntroductionContainer}>
-                    <h2 className={styles.Title} title={title}>
+                    <h2 className={`${styles.Title}`} title={title}>
                         {title}
                     </h2>
-                    <p className={styles.Bold}>{name}</p>
+                    <p className={`${styles.Bold}`}>{name}</p>
                     <p className={`${styles.Bold} ${styles.LowContrast}`}>
                         {occupation}
                     </p>
@@ -34,8 +34,11 @@ const Introduction = ({ title, name, occupation }: AboutMe) => {
                                 height={30}
                             />
                         </li>
-                        <li className={styles.MarginTop}>
-                            <a href={'mailto:ben.langenberg987@gmail.com'}>
+                        <li className={`${styles.MarginTop}`}>
+                            <a
+                                className={`${styles.Link}`}
+                                href={'mailto:ben.langenberg987@gmail.com'}
+                            >
                                 hello@ben.com
                             </a>
                         </li>

@@ -8,7 +8,9 @@ const Footer = () => {
     return (
         <footer className={styles.Footer}>
             <div className={styles.Container}>
-                <a href={url}>{text}</a>
+                <a className={`${styles.Link}`} href={url}>
+                    {text}
+                </a>
             </div>
         </footer>
     );

@@ -50,3 +50,7 @@
 .LowContrast {
     opacity: var(--low-contrast);
 }
+
+.Link:hover {
+    opacity: var(--high-contrast);
+}

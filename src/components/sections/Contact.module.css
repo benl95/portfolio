@@ -15,6 +15,7 @@
     text-decoration: underline;
 }
 
-.Link:focus {
+.Link:hover {
     color: blue;
+    text-decoration-color: var(--white);
 }
