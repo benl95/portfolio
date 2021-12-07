@@ -19,20 +19,24 @@ const Introduction = ({ title, name, occupation }: AboutMe) => {
                 <div>
                     <ul className={styles.LinksContainer}>
                         <li>
-                            <Image
-                                src="/github-icon.svg"
-                                alt="Github icon"
-                                width={30}
-                                height={30}
-                            />
+                            <a className={styles.HighContrast}>
+                                <Image
+                                    src="/github-icon.svg"
+                                    alt="Github icon"
+                                    width={30}
+                                    height={30}
+                                />
+                            </a>
                         </li>
                         <li className={styles.FlexGrow}>
-                            <Image
-                                src={'/linkedin-icon.svg'}
-                                alt="LinkedIn icon"
-                                width={30}
-                                height={30}
-                            />
+                            <a className={styles.HighContrast}>
+                                <Image
+                                    src={'/linkedin-icon.svg'}
+                                    alt="LinkedIn icon"
+                                    width={30}
+                                    height={30}
+                                />
+                            </a>
                         </li>
                         <li className={`${styles.MarginTop}`}>
                             <a
