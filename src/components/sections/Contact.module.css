@@ -1,9 +1,9 @@
 .Title {
-    margin: 1.5rem 0 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .Container {
-    padding: 1.125rem 1.1313rem 1.125rem 1.313rem;
+    padding: 1.5rem 1.1313rem 1.5rem 1.313rem;
     max-width: 532px;
     margin-left: auto;
     margin-right: auto;
