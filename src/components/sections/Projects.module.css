@@ -13,3 +13,9 @@
 .Line {
     border-bottom: 1px solid var(--white);
 }
+
+@media (min-width: 532px) {
+    .Container {
+        max-width: 732px;
+    }
+}

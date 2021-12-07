@@ -19,3 +19,9 @@
     color: blue;
     text-decoration-color: var(--white);
 }
+
+@media (min-width: 532px) {
+    .Container {
+        max-width: 732px;
+    }
+}

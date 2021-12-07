@@ -62,3 +62,9 @@
 .Link:hover {
     opacity: var(--high-contrast);
 }
+
+@media (min-width: 532px) {
+    .HeaderContainer {
+        max-width: 732px;
+    }
+}

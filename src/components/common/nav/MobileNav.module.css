@@ -11,3 +11,9 @@
     padding: 1.125rem 1.1313rem 1.125rem 1.313rem;
     border-bottom: 1px solid var(--white);
 }
+
+@media (min-width: 532px) {
+    .Nav {
+        max-width: 732px;
+    }
+}
