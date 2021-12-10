@@ -6,7 +6,7 @@ import { Children } from '@/types/elements';
 
 const Layout = ({ children }: Children) => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Ben Langenberg</title>
                 <meta
@@ -17,7 +17,7 @@ const Layout = ({ children }: Children) => {
             <MobileNav text="Langenberg" />
             {children}
             <Footer />
-        </div>
+        </>
     );
 };
 
