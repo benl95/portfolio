@@ -17,3 +17,9 @@
         max-width: 732px;
     }
 }
+
+@media (min-width: 732px) {
+    .Nav {
+        max-width: 100%;
+    }
+}

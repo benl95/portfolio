@@ -19,3 +19,9 @@
         max-width: 732px;
     }
 }
+
+@media (min-width: 732px) {
+    .Container {
+        max-width: 1024px;
+    }
+}
