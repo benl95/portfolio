@@ -3,3 +3,10 @@
     flex-direction: column;
     gap: 4rem;
 }
+
+@media (min-width: 732px) {
+    .Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

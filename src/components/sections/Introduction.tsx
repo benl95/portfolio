@@ -10,6 +10,7 @@ const Introduction = ({
     occupation,
     github,
     linkedIn,
+    about,
 }: AboutMe) => {
     return (
         <section className={styles.Section}>
@@ -45,6 +46,9 @@ const Introduction = ({
                     <p className={`${styles.Bold}`}>{name}</p>
                     <p className={`${styles.Bold} ${styles.LowContrast}`}>
                         {occupation}
+                    </p>
+                    <p className={`${styles.MaxWidthChar} ${styles.MarginTop}`}>
+                        {about}
                     </p>
                 </div>
                 <div className={styles.Breakpoint}>
