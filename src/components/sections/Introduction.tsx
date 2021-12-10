@@ -13,7 +13,7 @@ const Introduction = ({
 }: AboutMe) => {
     return (
         <section className={styles.Section}>
-            <SideLink orientation="left">
+            <SideLink>
                 <ul className={styles.Flex}>
                     <li>
                         <a href={linkedIn} className={styles.HighContrast}>
@@ -80,10 +80,10 @@ const Introduction = ({
                     </ul>
                 </div>
             </div>
-            <SideLink orientation="right">
+            <SideLink>
                 <div>
                     <a
-                        className={styles.Vertical}
+                        className={`${styles.Vertical} ${styles.HighContrast}`}
                         href={'mailto:ben.langenberg987@gmail.com'}
                     >
                         hello@ben.com
