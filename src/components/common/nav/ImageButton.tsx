@@ -6,13 +6,13 @@ interface ImageProps {
     alt: string;
     width: number;
     height: number;
-    onClick: any;
+    callback: any;
 }
 
-const ImageButton = ({ src, alt, width, height, onClick }: ImageProps) => {
+const ImageButton = ({ src, alt, width, height, callback }: ImageProps) => {
     function handleClick(e: React.MouseEvent) {
         e.preventDefault();
-        onClick();
+        callback();
     }
 
     return (

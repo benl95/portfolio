@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './MobileNav.module.css';
 import NavLinks from './NavLinks';
 import ImageButton from './ImageButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 interface Props {
     text: string;
 }
@@ -14,8 +14,22 @@ const MobileNav = ({ text }: Props) => {
 
     const [click, setClick] = useState(false);
 
+    useEffect(() => {
+        if (!click) {
+        }
+    });
+
     return (
         <nav>
+            <aside className={`${styles.Hamburger}`}>
+                {click && (
+                    <div className={`${styles.SlideInRight}`}>
+                        <NavLinks
+                            links={['introduction', 'projects', 'contact']}
+                        />
+                    </div>
+                )}
+            </aside>
             <div className={styles.NavContainer}>
                 <a href={'http://localhost:3000'}>{text}</a>
                 <div>
@@ -24,16 +38,8 @@ const MobileNav = ({ text }: Props) => {
                         alt="Hamburger menu icon"
                         width={width}
                         height={height}
-                        onClick={() => setClick(!click)}
+                        callback={() => setClick(!click)}
                     />
-
-                    {click && (
-                        <div className={styles.Hamburger}>
-                            <NavLinks
-                                links={['introduction', 'projects', 'contact']}
-                            />
-                        </div>
-                    )}
                 </div>
             </div>
         </nav>

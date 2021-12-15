@@ -1,4 +1,16 @@
-.Nav {
+/* .Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    marginLeft: auto;
+    margin-right: auto;
+    max-width: 532px;
+} */
+
+.NavContainer {
+    padding: 1.125rem 1.1313rem 1.125rem 1.313rem;
+    border-bottom: 1px solid var(--white);
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,19 +19,111 @@
     max-width: 532px;
 }
 
-.NavContainer {
+.NavContainer div {
+    z-index: 10;
+}
+
+.Hamburger div {
+    background-color: var(--background);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
     padding: 1.125rem 1.1313rem 1.125rem 1.313rem;
-    border-bottom: 1px solid var(--white);
+    z-index: 10;
+}
+
+.Hamburger ul {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.Hamburger a {
+    font-size: 2.5rem;
+    font-weight: var(--weight-bold);
+}
+
+.Hamburger a:hover {
+    opacity: var(--high-contrast);
+}
+
+.SlideInRight {
+    -webkit-animation: SlideInRight 0.5s cubic-bezier(0.25, 0.46, 0.45, 1) both;
+    animation: SlideInRight 0.5s cubic-bezier(0.25, 0.46, 0.45, 1) both;
+}
+
+.SlideOutRight {
+    -webkit-animation: SlideOutRight 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+        both;
+    animation: SlideOutRight 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes SlideOutRight {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+}
+@keyframes SlideOutRight {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes SlideInRight {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes SlideInRight {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @media (min-width: 532px) {
-    .Nav {
+    .NavContainer {
         max-width: 732px;
     }
 }
 
 @media (min-width: 732px) {
-    .Nav {
+    .NavContainer {
         max-width: 100%;
     }
 }
