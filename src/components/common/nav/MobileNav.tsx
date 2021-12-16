@@ -1,9 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from './MobileNav.module.css';
 import NavLinks from './NavLinks';
 import ImageButton from './ImageButton';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useSpring, animated } from '@react-spring/web';
 interface Props {
     text: string;
 }
@@ -13,22 +13,19 @@ const MobileNav = ({ text }: Props) => {
     const height: number = 25;
 
     const [click, setClick] = useState(false);
-
-    useEffect(() => {
-        if (!click) {
-        }
+    const animation = useSpring({
+        config: {
+            duration: 300,
+        },
+        right: click ? '0%' : '-100%',
     });
 
     return (
         <nav>
             <aside className={`${styles.Hamburger}`}>
-                {click && (
-                    <div className={`${styles.SlideInRight}`}>
-                        <NavLinks
-                            links={['introduction', 'projects', 'contact']}
-                        />
-                    </div>
-                )}
+                <animated.div style={animation}>
+                    <NavLinks links={['introduction', 'projects', 'contact']} />
+                </animated.div>
             </aside>
             <div className={styles.NavContainer}>
                 <a href={'http://localhost:3000'}>{text}</a>
