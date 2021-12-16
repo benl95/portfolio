@@ -4,7 +4,7 @@ import { Contact } from '@/types/content';
 
 const Contact = ({ title, details }: Contact) => {
     return (
-        <section>
+        <section id="contact">
             <div className={styles.Container}>
                 <h2 className={styles.Title}>{title}</h2>
                 <a className={styles.Link} href={`mailto:${details.email}`}>

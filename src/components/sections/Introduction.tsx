@@ -13,7 +13,7 @@ const Introduction = ({
     about,
 }: AboutMe) => {
     return (
-        <section className={styles.Section}>
+        <section className={styles.Section} id="introduction">
             <SideLink>
                 <ul className={styles.Flex}>
                     <li>

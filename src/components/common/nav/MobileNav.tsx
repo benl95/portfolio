@@ -23,7 +23,10 @@ const MobileNav = ({ text }: Props) => {
     return (
         <nav>
             <aside className={`${styles.Hamburger}`}>
-                <animated.div style={animation}>
+                <animated.div
+                    style={animation}
+                    onClick={() => setClick(!click)}
+                >
                     <NavLinks links={['introduction', 'projects', 'contact']} />
                 </animated.div>
             </aside>
