@@ -13,6 +13,8 @@ const MobileNav = ({ text }: Props) => {
     const height: number = 25;
 
     const [click, setClick] = useState(false);
+    const [icon, setIcon] = useState();
+
     const animation = useSpring({
         config: {
             duration: 300,
@@ -32,7 +34,7 @@ const MobileNav = ({ text }: Props) => {
             </aside>
             <div className={styles.NavContainer}>
                 <a href={'http://localhost:3000'}>{text}</a>
-                <div>
+                <div className={styles.HighContrast}>
                     <ImageButton
                         src="/hamburger.svg"
                         alt="Hamburger menu icon"

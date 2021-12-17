@@ -42,8 +42,12 @@
     font-weight: var(--weight-bold);
 }
 
-.Hamburger a:hover {
+.Hamburger a {
     opacity: var(--high-contrast);
+}
+
+.Hamburger a:hover {
+    opacity: var(--low-contrast);
 }
 
 .HighContrast button:hover {
