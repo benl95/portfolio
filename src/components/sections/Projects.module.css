@@ -23,7 +23,7 @@
 @media (min-width: 732px) {
     .Container {
         max-width: 1024px;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
