@@ -1,5 +1,7 @@
 import type { NextPage, GetStaticProps } from 'next';
+import content from '../content/content.json';
 import { Sections, Content } from '@/types/content';
+
 import HomeContent from '@/templates/Home';
 
 const Home: NextPage<Content> = ({ sections }) => {
@@ -7,10 +9,9 @@ const Home: NextPage<Content> = ({ sections }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-    const content = await fetch('http://localhost:3000//api/content');
-    const sections: Sections = await content.json();
+    const sections: Sections = content;
 
-    if (!sections) {
+    if (!sections || undefined) {
         return {
             notFound: true,
         };

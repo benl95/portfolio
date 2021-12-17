@@ -7,8 +7,6 @@ export interface ProjectDetails {
 
 export interface ContactDetails {
     email: string;
-    github: string;
-    linkedIn: string;
 }
 
 export interface AboutMe {
