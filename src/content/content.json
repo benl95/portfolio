@@ -13,12 +13,14 @@
             {
                 "src": "/spotify.svg",
                 "tools": ["React", "NodeJS", "Typescript"],
-                "description": "Small Spotify playlist clone made using the Spotify API"
+                "description": "Small Spotify playlist clone made using the Spotify API",
+                "repo": "https://github.com/benl95/progressive-web-apps-2021"
             },
             {
                 "src": "/pocket-tour-guide.svg",
                 "tools": ["Figma", "Figma prototyping"],
-                "description": "Pocket Tour Guide, a travel and planning app for sightseeing"
+                "description": "Pocket Tour Guide, a travel and planning app for sightseeing",
+                "repo": "https://www.figma.com/proto/9QFFu0zWJTPBxNseV4iBbI/Project-WEB---Opdracht-1?page-id=0%3A1&node-id=101%3A446&viewport=345%2C48%2C0.04&scaling=min-zoom&starting-point-node-id=101%3A446&show-proto-sidebar=1"
             }
         ]
     },

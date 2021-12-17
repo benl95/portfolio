@@ -3,6 +3,7 @@ export interface ProjectDetails {
     src: string;
     tools: string[];
     description: string;
+    repo: string;
 }
 
 export interface ContactDetails {

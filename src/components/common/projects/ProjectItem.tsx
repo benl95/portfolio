@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './ProjectItem.module.css';
 import { ProjectDetails } from '@/types/content';
 
-function ProjectItem({ src, tools, description }: ProjectDetails) {
+function ProjectItem({ src, tools, description, repo }: ProjectDetails) {
     // TODO: pass width and height as props
     const width: number = 383;
     const height: number = 300;
@@ -19,14 +19,16 @@ function ProjectItem({ src, tools, description }: ProjectDetails) {
     return (
         <div className={styles.Container}>
             <div className={styles.ImageContainer}>
-                <Image
-                    alt="Project image"
-                    src={src}
-                    width={width}
-                    height={height}
-                    layout="responsive"
-                    objectFit="cover"
-                />
+                <a href={repo} target="_blank" rel="noreferrer">
+                    <Image
+                        alt="Project image"
+                        src={src}
+                        width={width}
+                        height={height}
+                        layout="responsive"
+                        objectFit="cover"
+                    />
+                </a>
             </div>
             <ul className={styles.Flex}>{toolsList}</ul>
             <p className={styles.HighContrast}>{description}</p>

@@ -5,13 +5,17 @@ import { Project, ProjectDetails } from '@/types/content';
 
 const ProjectList = ({ list }: Project) => {
     const projectsList = list.map(
-        ({ src, tools, description }: ProjectDetails, i: number | string) => {
+        (
+            { src, tools, description, repo }: ProjectDetails,
+            i: number | string
+        ) => {
             return (
                 <li key={i}>
                     <ProjectItem
                         src={src}
                         tools={tools}
                         description={description}
+                        repo={repo}
                     />
                 </li>
             );
