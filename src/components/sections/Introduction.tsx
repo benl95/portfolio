@@ -17,7 +17,12 @@ const Introduction = ({
             <SideLink>
                 <ul className={styles.Flex}>
                     <li>
-                        <a href={linkedIn} className={styles.HighContrast}>
+                        <a
+                            href={linkedIn}
+                            className={styles.HighContrast}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <Image
                                 src={'/linkedin-icon.svg'}
                                 alt="LinkedIn icon"
@@ -27,7 +32,12 @@ const Introduction = ({
                         </a>
                     </li>
                     <li>
-                        <a href={github} className={styles.HighContrast}>
+                        <a
+                            href={github}
+                            className={styles.HighContrast}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <Image
                                 src="/github-icon.svg"
                                 alt="Github icon"
@@ -54,7 +64,12 @@ const Introduction = ({
                 <div className={styles.Breakpoint}>
                     <ul className={styles.LinksContainer}>
                         <li>
-                            <a href={github} className={styles.HighContrast}>
+                            <a
+                                href={github}
+                                className={styles.HighContrast}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <Image
                                     src="/github-icon.svg"
                                     alt="Github icon"
@@ -64,7 +79,12 @@ const Introduction = ({
                             </a>
                         </li>
                         <li className={styles.FlexGrow}>
-                            <a href={linkedIn} className={styles.HighContrast}>
+                            <a
+                                href={linkedIn}
+                                className={styles.HighContrast}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <Image
                                     src={'/linkedin-icon.svg'}
                                     alt="LinkedIn icon"
@@ -77,6 +97,8 @@ const Introduction = ({
                             <a
                                 className={`${styles.Link}`}
                                 href={'mailto:ben.langenberg987@gmail.com'}
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 hello@ben.com
                             </a>
@@ -89,6 +111,8 @@ const Introduction = ({
                     <a
                         className={`${styles.Vertical} ${styles.HighContrast}`}
                         href={'mailto:ben.langenberg987@gmail.com'}
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         hello@ben.com
                     </a>
