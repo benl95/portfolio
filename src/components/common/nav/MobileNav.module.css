@@ -46,6 +46,10 @@
     opacity: var(--high-contrast);
 }
 
+.HighContrast button:hover {
+    opacity: 0.6;
+}
+
 @media (min-width: 532px) {
     .NavContainer {
         max-width: 732px;
