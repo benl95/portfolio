@@ -17,7 +17,14 @@ const NavLinks = ({ links }: Links) => {
         );
     });
 
-    return <ul>{linksList}</ul>;
+    return (
+        <ul>
+            {linksList}
+            <a href="https://read.cv/benl95" target="_blank" rel="noreferrer">
+                cv
+            </a>
+        </ul>
+    );
 };
 
 export default NavLinks;
