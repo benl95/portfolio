@@ -100,7 +100,7 @@ const Introduction = ({
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                hello@ben.com
+                                Contact me
                             </a>
                         </li>
                     </ul>
@@ -114,7 +114,7 @@ const Introduction = ({
                         target="_blank"
                         rel="noreferrer"
                     >
-                        hello@ben.com
+                        Contact me
                     </a>
                 </div>
             </SideLink>
