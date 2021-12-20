@@ -33,7 +33,7 @@ const MobileNav = ({ text }: Props) => {
                 </animated.div>
             </aside>
             <div className={styles.NavContainer}>
-                <a href={'benlangenberg.dev'}>{text}</a>
+                <a href={'/'}>{text}</a>
                 <div className={styles.HighContrast}>
                     <ImageButton
                         src="/hamburger.svg"
