@@ -17,6 +17,12 @@
                 "repo": "https://github.com/benl95/progressive-web-apps-2021"
             },
             {
+                "src": "/wzdb.svg",
+                "tools": ["SvelteKit", "Typescript", "Supabase"],
+                "description": "During the minor Web Design & Development our final assignment was the Meesterproef. The assignment was to develop an application for a stakeholder. For the stakeholder we developed a platform where illiterate people can get explanation of letters they receive from organisational bodies in their native language.",
+                "repo": "https://jonahgoldwastaken.github.io/wat-zegt-deze-brief/"
+            },
+            {
                 "src": "/pocket-tour-guide.svg",
                 "tools": ["Figma"],
                 "description": "Pocket Tour Guide, a travel and planning app for sightseeing in various cities. Prototype made in Figma.",
@@ -27,6 +33,12 @@
                 "tools": ["NextJS", "Typescript"],
                 "description": "Personal portfolio website created using NextJS and Typescript.",
                 "repo": "https://github.com/benl95/portfolio"
+            },
+            {
+                "src": "/cmdmethods.svg",
+                "tools": ["VueJS"],
+                "description": "Cmdmethods is a website that helps students with planning their UX research by providing various research techniques. The website was in need of a redesign. During my internship I helped redesigning the website and was responsible for building the design in Vue.js.",
+                "repo": "https://github.com/cmdmethods/website"
             }
         ]
     },
