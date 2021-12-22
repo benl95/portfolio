@@ -20,7 +20,7 @@
                 "src": "/wzdb.svg",
                 "tools": ["SvelteKit", "Typescript", "Supabase"],
                 "description": "During the minor Web Design & Development our final assignment was the Meesterproef. The assignment was to develop an application for a stakeholder. For the stakeholder we developed a platform where illiterate people can get explanation of letters they receive from organisational bodies in their native language.",
-                "repo": "https://jonahgoldwastaken.github.io/wat-zegt-deze-brief/"
+                "repo": "https://github.com/jonahgoldwastaken/wat-zegt-deze-brief"
             },
             {
                 "src": "/portfolio.svg",
